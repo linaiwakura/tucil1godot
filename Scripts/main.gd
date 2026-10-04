@@ -13,4 +13,4 @@ func _process(delta: float) -> void:
 
 # unpause game after  main menu un-necromanced
 func _on_main_menu_start_game() -> void:
-	get_tree().paused = false	
+	get_tree().paused = false
