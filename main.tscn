@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dyvv8tm6r3fbv"]
+
+[ext_resource type="Script" uid="uid://bw4jioiy4a24b" path="res://Scripts/main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://hgdq8c51hgdg" path="res://level_root.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://ds6c7jat6r7qa" path="res://main_menu.tscn" id="2_0xm2m"]
+
+[node name="main" type="Node2D" unique_id=358385023]
+script = ExtResource("1_h2yge")
+
+[node name="FloorFloating" type="StaticBody2D" parent="." unique_id=2094975461]
+position = Vector2(1530.8447, 747.9529)
+scale = Vector2(0.58315516, 0.16911165)
+
+[node name="LevelRoot" parent="FloorFloating" unique_id=803084608 instance=ExtResource("1_ig7tw")]
+position = Vector2(-2625.1072, -4422.8345)
+scale = Vector2(1.7148095, 5.913253)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=717911253]
+
+[node name="MainMenu" parent="CanvasLayer" unique_id=1661413953 instance=ExtResource("2_0xm2m")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="start_game" from="CanvasLayer/MainMenu" to="." method="_on_main_menu_start_game"]

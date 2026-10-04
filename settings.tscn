@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://4qfac5few7n4"]
+
+[ext_resource type="Script" uid="uid://d00yka27qvb77" path="res://Scripts/settings.gd" id="1_1k4ii"]
+[ext_resource type="Texture2D" uid="uid://cjw34cp0buw8y" path="res://image/MainMenu/background.png" id="1_x2hje"]
+[ext_resource type="Texture2D" uid="uid://w24ybxhwfiwq" path="res://image/MainMenu/splice.png" id="2_3ykye"]
+[ext_resource type="Texture2D" uid="uid://c3tv1lkgewjwl" path="res://image/MainMenu/SplashArt.png" id="3_gc0em"]
+[ext_resource type="Texture2D" uid="uid://bxayncgncewxl" path="res://image/MainMenu/bgSettings.png" id="4_ohexs"]
+[ext_resource type="Texture2D" uid="uid://83elrtiw5fen" path="res://image/MainMenu/keybinds.png" id="5_1k4ii"]
+[ext_resource type="Texture2D" uid="uid://nqrfkhskm734" path="res://image/MainMenu/jump.png" id="6_82xqq"]
+[ext_resource type="Texture2D" uid="uid://8g73cxk418s1" path="res://image/MainMenu/left.png" id="7_y43lv"]
+[ext_resource type="Texture2D" uid="uid://cog3bhwxs8x4y" path="res://image/MainMenu/right.png" id="8_7eiv2"]
+[ext_resource type="Texture2D" uid="uid://c0j8pl86awhix" path="res://image/MainMenu/dash.png" id="9_tk3m0"]
+[ext_resource type="Texture2D" uid="uid://be4jmadj64kq8" path="res://image/MainMenu/rectangle.png" id="10_fdp2d"]
+
+[node name="settingsControl" type="Control" unique_id=1358703121]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1k4ii")
+
+[node name="bg" type="TextureRect" parent="." unique_id=71873182]
+texture_filter = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_x2hje")
+
+[node name="bgSplash" type="TextureRect" parent="." unique_id=311094646]
+texture_filter = 1
+layout_mode = 0
+offset_left = 150.0
+offset_right = 627.0
+offset_bottom = 1080.0
+texture = ExtResource("2_3ykye")
+
+[node name="splash" type="TextureRect" parent="." unique_id=1681569495]
+texture_filter = 1
+layout_mode = 0
+offset_left = 150.0
+offset_top = 364.0
+offset_right = 627.0
+offset_bottom = 1080.0
+texture = ExtResource("3_gc0em")
+
+[node name="bgSettings" type="TextureRect" parent="." unique_id=491085107]
+texture_filter = 1
+layout_mode = 0
+offset_left = 650.0
+offset_top = 155.0
+offset_right = 1585.0
+offset_bottom = 916.0
+texture = ExtResource("4_ohexs")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=738516900]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="keybinds" type="TextureRect" parent="." unique_id=401348688]
+texture_filter = 1
+layout_mode = 0
+offset_left = 650.0
+offset_top = 49.0
+offset_right = 1095.0
+offset_bottom = 142.0
+texture = ExtResource("5_1k4ii")
+
+[node name="jump" type="TextureRect" parent="." unique_id=1865503042]
+texture_filter = 1
+layout_mode = 0
+offset_left = 670.0
+offset_top = 360.0
+offset_right = 744.0
+offset_bottom = 400.0
+texture = ExtResource("6_82xqq")
+
+[node name="left" type="TextureRect" parent="." unique_id=1764178648]
+texture_filter = 1
+layout_mode = 0
+offset_left = 670.0
+offset_top = 210.0
+offset_right = 743.0
+offset_bottom = 250.0
+texture = ExtResource("7_y43lv")
+
+[node name="right" type="TextureRect" parent="." unique_id=1037242236]
+texture_filter = 1
+layout_mode = 0
+offset_left = 670.0
+offset_top = 285.0
+offset_right = 760.0
+offset_bottom = 325.0
+texture = ExtResource("8_7eiv2")
+
+[node name="dash" type="TextureRect" parent="." unique_id=178891847]
+texture_filter = 1
+layout_mode = 0
+offset_left = 670.0
+offset_top = 435.0
+offset_right = 743.0
+offset_bottom = 475.0
+texture = ExtResource("9_tk3m0")
+
+[node name="buttonLeft" type="TextureButton" parent="." unique_id=675597778]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 202.0
+offset_right = 945.0
+offset_bottom = 259.0
+texture_normal = ExtResource("10_fdp2d")
+
+[node name="buttonRight" type="TextureButton" parent="." unique_id=1127170302]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 420.0
+offset_right = 947.0
+offset_bottom = 477.0
+texture_normal = ExtResource("10_fdp2d")
+
+[node name="buttonJump" type="TextureButton" parent="." unique_id=1950240140]
+layout_mode = 0
+offset_left = 769.0
+offset_top = 350.0
+offset_right = 946.0
+offset_bottom = 407.0
+texture_normal = ExtResource("10_fdp2d")
+
+[node name="buttonDash" type="TextureButton" parent="." unique_id=564218264]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 275.0
+offset_right = 947.0
+offset_bottom = 332.0
+texture_normal = ExtResource("10_fdp2d")
