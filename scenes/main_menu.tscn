@@ -103,4 +103,9 @@ texture_normal = ExtResource("8_0k4wn")
 texture_pressed = ExtResource("10_j5v2v")
 texture_hover = ExtResource("9_j5v2v")
 
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=213190447]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="pressed" from="start" to="." method="_on_start_button_pressed"]
